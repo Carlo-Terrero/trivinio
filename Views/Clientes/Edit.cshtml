@@ -1,0 +1,70 @@
+@model PruebaTrivinio.Models.Cliente
+
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+
+<h1>Edit Customer</h1>
+
+<h4>Data</h4>
+<hr />
+<div class="row">
+    @* <div class="col-md-12 col-md-6"> *@
+    <div class="col-ms-12">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            
+            <div class="row">
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="Surnames" class="control-label"></label>
+                    <input asp-for="Surnames" class="form-control" />
+                    <span asp-validation-for="Surnames" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="Country" class="control-label"></label>
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+                <div class="form-group col-ms-12 col-md-6 mb-2">
+                    <label asp-for="Birthdate" class="control-label"></label>
+                    <input asp-for="Birthdate" class="form-control" />
+                    <span asp-validation-for="Birthdate" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary btn-sm mt-1 mb-2" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary mt-2 btn-sm" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

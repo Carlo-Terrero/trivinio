@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTrivinio", "PruebaTrivinio.csproj", "{C2F1CD7D-8784-49B8-90B2-8D03A142A81E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F1CD7D-8784-49B8-90B2-8D03A142A81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F1CD7D-8784-49B8-90B2-8D03A142A81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F1CD7D-8784-49B8-90B2-8D03A142A81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F1CD7D-8784-49B8-90B2-8D03A142A81E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14E3D439-8DF5-4CD9-896F-494DA589C46E}
+	EndGlobalSection
+EndGlobal
